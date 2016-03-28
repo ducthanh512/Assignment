@@ -1,0 +1,415 @@
+
+
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+
+	color:#fcfcfc;
+	background-color:#355664;
+
+  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+  padding: 10px 20px;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+
+h2{
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#24404c;
+	border-bottom:1px solid #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+.logoimage {width:37%;}
+nav{
+	background:url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+	padding:0 5px;
+	position:absolute;
+	right:0;
+	top:4em;
+	width: 45%;
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#565656;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+#page{
+	width:65%;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	background-color:#213E4A;
+	margin:3em 0;
+	padding:20px;
+
+	text-shadow:0 2px 0 black;
+}
+
+figure{
+	border:3px solid #142830;
+	float:right;
+	height:50%;
+	margin-left:15px;
+	overflow:hidden;
+	width:50%;
+	z-index:-1;
+}
+
+
+figure img{
+	margin-left:-60px;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+
+footer a,footer a:visited{
+	color:#cccccc;
+	background-color:#213e4a;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+}
+
+ol.orderList {margin-left: 20px;}
+
+ol.orderList  li {
+    font-weight: bold;
+}
+
+ol.orderList  li p {
+    font-weight: normal;
+}
+
+
+
+
+	table {
+		border-spacing:0;
+		border:1px solid #d3d3d3;
+		background:#fefefe;
+		width:90%;
+
+	}
+
+	th, td {padding:18px 28px 18px; text-align:left; }
+
+	th {padding-top:22px; text-shadow: 0px 0px black; background:#e8eaeb;}
+
+
+    .bold { font-weight: bold; }
+    em {
+      color: Gray;
+      font-style: italic;
+	  text-shadow: 0px 0px black;
+    }
+    .symbol { font-size: 0.8em; }
+    .mac { color: SteelBlue; text-shadow: 0px 0px black; }
+    .mac a { color: MidnightBlue; }
+
+    .notes {
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+
+@font-face{
+	font-family: 'MyWebFont';
+	src: url('others/HenryMorganHand.ttf') format('truetype');
+	}
+
+	@font-face{
+	font-family: 'District';
+	src: url('others/District.ttf') format('truetype');
+	}
+p.testfont { font-family: 'MyWebFont', Arial, sans-serif; font-size:500%}
+
+.articletitle {font-family: 'District';}
+
+a.current {background:none repeat scroll 0 0 #FFFFFF;border-bottom:solid 2px #999999;color:#999999;box-shadow:0 10px 30px rgba(0, 0, 0, 0.3);}
+
+.videodemo {text-align:center;}
+
+.hompepagebottom {
+padding-top:45px;
+padding-bottom:0px;
+padding-left:0px;
+text-align:center;
+overflow:hidden;
+z-index:1000;
+width:100%}
+
+.hompagetopright {
+float: right;
+width: 50%;
+}
+.hompagetopleft{
+width: 50%;
+}
+#homepagefigure {width: 95%; float: right;}
+
+.whitefont {color:#fcfcfc; text-align:center;}
+.profiletitle{ text-align:left; background-color: lightblue; color:blue;font-weight:900; padding:5px;}
+
+#timetabletable td,th {border-top:1px solid #e0e0e0; border-right:1px solid #e0e0e0;text-align:left; padding:5px 5px 5px 5px; padding-bottom:0px;white-space: nowrap; overflow:hidden;width:100%;}
+
+#timetabletable  {background-color:#EEEEEE; border-spacing:0;table-layout: fixed; border-width:2px;border-color:black; width:100%;}
+
+.yellowbackground{background-color:#E5E2B1;}
+
+.pinkbackground{background-color:#E5B1B1;}
+
+.bluebackground{background-color:#B1DDE5;}
+
+.greenbackground{background-color:#B4E5B3;}
+
+.timetablebackground {background-color:#EEEEEE;border:0; border-collapse:collapse;}
+
+
+#timetableheader th {background-color:#DDDDDD}
+
+#tablepersonaldata{width:100%;}
+#tableprofile {width:100%;}
+
+
+
+.alignleft{text-align:left;width:70%;}
+.alignright{text-align:right;width:30%;}
+
+a.current {background:none repeat scroll 0 0 #FFFFFF;border-bottom:solid 2px #999999;color:#999999;box-shadow:0 10px 30px rgba(0, 0, 0, 0.3);}
+
+
+#bodyabout h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow: 0px 0px black;
+	font-weight:bold;
+}
+
+#bodyabout nav ul li a,
+nav ul li a:visited{
+text-shadow: 0px 0px black;
+}
+
+#bodyabout article {
+text-shadow: 0px 0px black;
+}
+
+
+#bodyabout {
+font-weight:bold;
+color:#000000;
+font-size:0.825em;}
+
+
+#bodyabout figure img{
+	margin: 2px;
+	width:98%;
+	text-align: center;
+
+}
+
+#bodyabout figure{
+	border:3px solid #142830;
+	float:left;
+	width: 70%;
+	text-align: center;
+
+}
+
+#tableFont {background-color:WhiteSmoke;  border-spacing:0; width:100%}
+
+
+
+#tableFont caption {
+      padding: 20px 0 5px;
+      margin: 0;
+      font: normal bold 1.35em Arial, Helvetica, sans-serif;
+      text-align: left;
+      color: Black;
+    }
+#tableFont th {
+      padding: 2px 0;
+      border: 1px solid Black;
+      border-bottom-width: 3px;
+	  color:black;
+      font: normal bold 1.15em Arial, Helvetica, sans-serif;
+	  text-shadow: 0px 0px black;
+    }
+#tableFont td {
+      padding: 5px 20px;
+      border: 1px solid Silver;
+      font-size: 1.2em;
+	  color: black;
+	  text-shadow: 0px 0px black;
+    }
+#profileimage { width:90%; height:90%;}
+#profileimagetd {width:40%;}
+#profilelabletd{width:30%;}
+#profilevaluetd{width:30%;}
+
+ .prefont { font-weight:bold;
+			font-size:2em;}
+
+.imagewebsitefonts {width:30%; height:30%;}
+.videodisplay {width:100%; height:100%;}
+
+.box1{
+width:20px;
+height:20px;
+font-size: 12px;
+color:black;
+background:#D7E5F0;
+border:.1em solid red;
+padding:30px;
+font-weight: bold;
+
+float: left;
+}
